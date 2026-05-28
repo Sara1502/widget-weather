@@ -4,7 +4,7 @@ navigator.geolocation.getCurrentPosition(
         const latitude = position.coords.latitude;
         const longitude = position.coords.longitude;
 
-        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=54ac4573647eaab790fe699fb0ce1f22&lang=pt_br&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${OPENWEATHER_API_KEY}&lang=pt_br&units=metric`)
             .then(res => res.json())
             .then(data => {
                 const temp = Math.round(data.main.temp);
