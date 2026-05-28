@@ -33,3 +33,6 @@
     margin-top: 0;
 }
 
+.clima::first-letter {
+  text-transform: uppercase;
+}
